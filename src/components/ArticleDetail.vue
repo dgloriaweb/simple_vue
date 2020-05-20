@@ -38,7 +38,7 @@ export default {
 </script>
 
 <style scoped>
-/* .article-wrapper {
+.article-wrapper {
   position: relative;
   padding-top: 50vh;
   background-size: cover;
@@ -57,5 +57,5 @@ export default {
 .fade-leave-to {
   opacity: 0;
   transform: translateX(100%);
-} */
+}
 </style>

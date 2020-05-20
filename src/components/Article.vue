@@ -1,10 +1,7 @@
 <template>
-  <div>
-    <router-link :to="articlePath">
-        Hello
-      <p>{{ article.title }}</p>
-    </router-link>
-  </div>
+  <router-link :to="articlePath">
+    <p>Hello {{ article.title }}</p>
+  </router-link>
 </template>
 
 <script>
@@ -18,4 +15,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style  scoped>
+img {
+  box-shadow: 0 0 35px #111;
+}</style>

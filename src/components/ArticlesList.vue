@@ -39,12 +39,12 @@ export default {
 </script>
 
 <style scoped>
-/* ul {
+ul {
   display: grid;
   list-style: none;
   padding: 1rem;
   margin: 0;
   row-gap: 1rem;
   grid-template-columns: repeat(6,1fr)
-} */
+}
 </style>
