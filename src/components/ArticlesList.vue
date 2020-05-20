@@ -26,7 +26,7 @@ export default {
           `https://babiwes.com/larticles/public_html/api/articles`
         )
         const articles = await res.json()
-        this.articles = articles.results
+        this.articles = articles.data
       } catch (e) {
         console.log(e)
       }
