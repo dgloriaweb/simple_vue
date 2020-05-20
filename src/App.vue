@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <!-- all is standard html + mustache syntax variables -->
-    <!-- <Header :title="title" /> -->
+    <Header :title="title" />
     <transition name="fade">
       <router-view />
 
