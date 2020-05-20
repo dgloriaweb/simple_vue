@@ -22,12 +22,12 @@ export default {
 </script>
 
 <style scoped>
-header {
+/* header {
   background-color: #111;
   padding: 20px;
   color: #fff;
 }
 h1 {
   margin: 0;
-}
+} */
 </style>
