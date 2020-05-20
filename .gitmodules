@@ -1,0 +1,3 @@
+[submodule "path_to_submodule"] 
+  path = cors-anywhere 
+  url = git://cors-anywhere/
