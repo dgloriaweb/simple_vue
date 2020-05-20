@@ -10,7 +10,7 @@
 </template>
 
 <script>
-// import Header from './components/Header.vue'
+import Header from './components/Header.vue'
 
 export default {
   name: 'App',
@@ -20,7 +20,7 @@ export default {
     }
   },
   components: {
-    // Header,
+     Header,
   },
 }
 </script>
