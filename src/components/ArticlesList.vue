@@ -22,7 +22,7 @@ export default {
     fetchData: async function() {
       try {
         const res = await fetch(
-          `https://babiwes.com/larticles_v7/public/api/articleslarticles`
+          `https://babiwes.com/larticles_v7/public/api/articles`
         )
         const articles = await res.json()
         this.articles = articles.data
