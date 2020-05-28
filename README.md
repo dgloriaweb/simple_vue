@@ -24,3 +24,4 @@ npm run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 # simple_vue
 # Chairs_vue
+# Chairs_vue
