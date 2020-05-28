@@ -1,10 +1,10 @@
 <template>
   <transition name="fade">
-    <div class="article-wrapper" :style="styles">
-      <div class="article-info">
-        <h1>{{ article.title }}</h1>
-        <h3>Body: </h3>
-        <p>{{ article.body }}</p>
+    <div class="chair-wrapper" :style="styles">
+      <div class="chair-info">
+        <h1>{{ chair.name }}</h1>
+        <h3>Price: </h3>
+        <p>{{ chair.price }}</p>
       </div>
     </div>
   </transition>
@@ -14,7 +14,7 @@
 export default {
   data() {
     return {
-      article: {},
+      chair: {},
     }
   },
   created: function() {
@@ -25,11 +25,11 @@ export default {
     fetchData: async function() {
       try {
         const res = await fetch(
-          // https://babiwes.com/larticles_v7/public/api/articles
-          `https://babiwes.com/larticles_v7/public/api/articles/${this.$route.params.id}`
+          // `https://babiwes.com/lchairs_v7/public/api/chairs/${this.$route.params.id}`
+          `http://localhost/chair_api/public/api/chairs/${this.$route.params.id}`
         )
-        const article = await res.json()
-        this.article = article
+        const chair = await res.json()
+        this.chair = chair.data
       } catch (e) {
         console.log(e)
       }
@@ -39,12 +39,12 @@ export default {
 </script>
 
 <style scoped>
-.article-wrapper {
+.chair-wrapper {
   position: relative;
   padding-top: 50vh;
   background-size: cover;
 }
-.article-info {
+.chair-info {
   background: #fff;
   color: #222;
   padding: 2rem 10%;

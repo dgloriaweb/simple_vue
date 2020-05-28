@@ -1,18 +1,18 @@
 <template>
   <ul>
-    <li v-for="article in articles" :key="article.id">
-      <Article :article="article" />
+    <li v-for="chair in chairs" :key="chair.id">
+      <Chair :chair="chair" />
     </li>
   </ul>
 </template>
 
 <script>
-import Article from './Article.vue'
+import Chair from './Chair.vue'
 export default {
-  name: 'ArticlesList',
+  name: 'ChairsList',
   data() {
     return {
-      articles: [],
+      chairs: [],
     }
   },
   created: function() {
@@ -22,17 +22,18 @@ export default {
     fetchData: async function() {
       try {
         const res = await fetch(
-          `https://babiwes.com/larticles_v7/public/api/articles`
+          // `https://babiwes.com/lchairs_v7/public/api/chairs`
+          'http://localhost/chair_api/public/api/chairs'
         )
-        const articles = await res.json()
-        this.articles = articles.data
+        const chairs = await res.json()
+        this.chairs = chairs.data
       } catch (e) {
         console.log(e)
       }
     },
   },
   components: {
-    Article,
+    Chair,
   },
 }
 </script>

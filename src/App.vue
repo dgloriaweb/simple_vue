@@ -16,7 +16,7 @@ export default {
   name: 'App',
   data() {
     return {
-      title: 'Vue Articles DB',
+      title: 'Vue Chairs DB',
     }
   },
   components: {
